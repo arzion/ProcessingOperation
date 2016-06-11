@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ProcessingOperations</id>
+        <version>1.0.0</version>
+        <title>ProcessingOperations</title>
+        <authors>vo.muzyka</authors>
+        <owners>vo.muzyka</owners>
+        <projectUrl>https://github.com/arzion/ProcessingOperations</projectUrl>
+        <iconUrl>http://lumiaconversationsuk.microsoft.com/wp-content/uploads/2015/07/Home.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Easy and configurable way to work with scheduled operations</description>
+        <language>en-US</language>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5.2" />
+            <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.5.2" />
+            <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.5.2" />
+        </frameworkAssemblies>
+        <files>
+            <file src="\Content\app.config.install.xdt" target="" />
+            <file src="\Content\app.config.uninstall.xdt" target="" />
+            <file src="\Content\web.config.install.xdt" target="" />
+            <file src="\Content\web.config.uninstall.xdt" target="" />
+        </files>
+    </metadata>
+</package>

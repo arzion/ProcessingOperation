@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ProcessingOperations")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Easy and configurable way to work with scheduled operations")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("vo.muzyka")]
 [assembly: AssemblyProduct("ProcessingOperations")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
