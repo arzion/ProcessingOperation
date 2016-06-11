@@ -166,3 +166,4 @@ $RECYCLE.BIN/
 TestResult.xml
 doc/
 pck/
+/ProcessingOperations/ProcessingOperations.*.nupkg

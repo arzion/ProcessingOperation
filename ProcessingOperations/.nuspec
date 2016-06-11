@@ -16,11 +16,11 @@
             <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.5.2" />
             <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.5.2" />
         </frameworkAssemblies>
-        <files>
-            <file src="\Content\app.config.install.xdt" target="" />
-            <file src="\Content\app.config.uninstall.xdt" target="" />
-            <file src="\Content\web.config.install.xdt" target="" />
-            <file src="\Content\web.config.uninstall.xdt" target="" />
-        </files>
     </metadata>
+	<files>
+		<file src="\Content\app.config.install.xdt" target="" />
+		<file src="\Content\app.config.uninstall.xdt" target="" />
+		<file src="\Content\web.config.install.xdt" target="" />
+		<file src="\Content\web.config.uninstall.xdt" target="" />
+	</files>
 </package>
