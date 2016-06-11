@@ -6,7 +6,7 @@ namespace ProcessingOperations.Configuration
     /// Represents the collection of the processing manager in configuration file.
     /// </summary>
     /// <seealso cref="System.Configuration.ConfigurationElementCollection" />
-    [ConfigurationCollection(typeof(ProcessingManagersSection))]
+    [ConfigurationCollection(typeof(ProcessingOperationsSection))]
     internal class RepeatingOperationProcessingManagersCollection : ConfigurationElementCollection
     {
         /// <summary>

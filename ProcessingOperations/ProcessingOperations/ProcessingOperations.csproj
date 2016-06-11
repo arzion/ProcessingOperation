@@ -35,11 +35,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration\IProcessingManagersSettings.cs" />
-    <Compile Include="Configuration\IProcessingManagersSettingsProvider.cs" />
+    <Compile Include="Configuration\IProcessingOperationsSettings.cs" />
+    <Compile Include="Configuration\IProcessingOperationsSettingsProvider.cs" />
     <Compile Include="Configuration\IRepeatingOperationProcessingManagerSettings.cs" />
-    <Compile Include="Configuration\ProcessingManagersSection.cs" />
-    <Compile Include="Configuration\ProcessingManagersSettingsProvider.cs" />
+    <Compile Include="Configuration\ProcessingOperationsSection.cs" />
+    <Compile Include="Configuration\ProcessingOperationsSettingsProvider.cs" />
     <Compile Include="Configuration\RepeatingOperationProcessingManagersCollection.cs" />
     <Compile Include="Configuration\RepeatingOperationProcessingManagerSettings.cs" />
     <Compile Include="IOperation.cs" />

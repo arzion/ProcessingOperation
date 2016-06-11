@@ -8,7 +8,7 @@ namespace ProcessingOperations.Configuration
     /// Represents the section of the processing manager in configuration file.
     /// </summary>
     /// <seealso cref="System.Configuration.ConfigurationSection" />
-    internal class ProcessingManagersSection : ConfigurationSection, IProcessingManagersSettings
+    internal class ProcessingOperationsSection : ConfigurationSection, IProcessingOperationsSettings
     {
         /// <summary>
         /// Gets the message processing managers element.

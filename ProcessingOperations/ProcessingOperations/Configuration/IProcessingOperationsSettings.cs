@@ -5,7 +5,7 @@ namespace ProcessingOperations.Configuration
     /// <summary>
     /// The settings of the processing managers.
     /// </summary>
-    internal interface IProcessingManagersSettings
+    internal interface IProcessingOperationsSettings
     {
         /// <summary>
         /// Gets the repeating operation processing managers settings.

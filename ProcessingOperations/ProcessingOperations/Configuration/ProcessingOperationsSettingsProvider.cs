@@ -5,15 +5,15 @@ namespace ProcessingOperations.Configuration
     /// <summary>
     /// The provider of the settings for processing managers.
     /// </summary>
-    internal class ProcessingManagersSettingsProvider : IProcessingManagersSettingsProvider
+    internal class ProcessingOperationsSettingsProvider : IProcessingOperationsSettingsProvider
     {
         /// <summary>
         /// Gets the settings.
         /// </summary>
         /// <returns>The processing manager settings.</returns>
-        public IProcessingManagersSettings GetSettings()
+        public IProcessingOperationsSettings GetSettings()
         {
-            return ConfigurationManager.GetSection("processingManagers") as ProcessingManagersSection;
+            return ConfigurationManager.GetSection("processingOperations") as ProcessingOperationsSection;
         }
     }
 }

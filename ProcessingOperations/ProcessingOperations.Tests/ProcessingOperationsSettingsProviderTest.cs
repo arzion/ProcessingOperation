@@ -5,13 +5,13 @@ using Xunit;
 
 namespace ProcessingOperations.Tests
 {
-    public class ProcessingManagersSettingsProviderTest
+    public class ProcessingOperationsSettingsProviderTest
     {
         [Fact]
         public void WhenGettingSettings_ThenSettingsProvided()
         {
             // Act
-            var sut = new ProcessingManagersSettingsProvider();
+            var sut = new ProcessingOperationsSettingsProvider();
             var settings = sut.GetSettings();
 
             // Arrange

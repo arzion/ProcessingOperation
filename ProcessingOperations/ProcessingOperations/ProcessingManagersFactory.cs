@@ -12,7 +12,7 @@ namespace ProcessingOperations
     /// <seealso cref="IProcessingManagersFactory" />
     public class ProcessingManagersFactory : IProcessingManagersFactory
     {
-        private readonly IProcessingManagersSettingsProvider _settingsProvider;
+        private readonly IProcessingOperationsSettingsProvider _settingsProvider;
         private readonly IOperationFactory _operationFactory;
 
         /// <summary>
@@ -21,7 +21,7 @@ namespace ProcessingOperations
         /// <exception cref="InvalidOperationException">IOperation factory should be configured.</exception>
         public ProcessingManagersFactory()
         {
-            _settingsProvider = new ProcessingManagersSettingsProvider();
+            _settingsProvider = new ProcessingOperationsSettingsProvider();
             var operationFactory = ProcessingOperationsConfiguration.OperationFactory;
             if (operationFactory == null)
             {
