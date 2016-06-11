@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0"?>
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
-    <configSections>
-        <section name="processingOperations" type="ProcessingOperations.Configuration.ProcessingOperationsSection, ProcessingOperations" xdt:Transform="Insert" />
+    <configSections xdt:Transform="InsertIfMissing">
+        <section name="processingOperations" type="ProcessingOperations.Configuration.ProcessingOperationsSection, ProcessingOperations" xdt:Transform="InsertIfMissing" />
     </configSections>
-    <processingOperations xdt:Transform="Insert">
+    <processingOperations xdt:Transform="InsertIfMissing">
         <repeatingOperations>
             <manager name="" operationKey="" everySeconds=""/>
         </repeatingOperations>

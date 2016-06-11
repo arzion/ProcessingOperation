@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>ProcessingOperations</id>
-        <version>1.0.0</version>
+        <version>1.0.2</version>
         <title>ProcessingOperations</title>
         <authors>vo.muzyka</authors>
         <owners>vo.muzyka</owners>
@@ -17,10 +17,10 @@
             <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.5.2" />
         </frameworkAssemblies>
     </metadata>
-	<files>
-		<file src="\Content\app.config.install.xdt" target="" />
-		<file src="\Content\app.config.uninstall.xdt" target="" />
-		<file src="\Content\web.config.install.xdt" target="" />
-		<file src="\Content\web.config.uninstall.xdt" target="" />
-	</files>
+    <files>
+        <file src="\Content\app.config.install.xdt" target="content" />
+        <file src="\Content\app.config.uninstall.xdt" target="content" />
+        <file src="\Content\web.config.install.xdt" target="content" />
+        <file src="\Content\web.config.uninstall.xdt" target="content" />
+    </files>
 </package>
