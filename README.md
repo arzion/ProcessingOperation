@@ -12,7 +12,7 @@ public class MyOperation : IOperation {
     }
 }
 
-// 2. reate repeating operation processing manager
+// 2. create repeating operation processing manager
 var manager = new RepeatingOperationProcessingManager(
     operation,
     new RepeatingOperationSettings {
@@ -24,7 +24,7 @@ manager.Start();
 
 // 4. in any point of time you can stop repeating operation by calling
 manager.Stop();
-// Calling stop equivalent to manager.Dispose();
+// Calling Stop() equivalent to manager.Dispose();
 ```
 
 2. With configuration (more preferrably if you are using IoC container):
