@@ -45,7 +45,7 @@ manager.Stop();
 // Calling Stop() equivalent to manager.Dispose();
 ```
 
-## 2. With configuration file (more preferrably if you are using IoC container):
+## 2. With configuration file (more preferably if you are using IoC container):
 
 You can specifiy operations configuration in the *configuration file (.config)* of your application
 
