@@ -1,5 +1,8 @@
 # ProcessingOperations
 Infrastructure for scheduling execution of operations.
+
+https://www.nuget.org/packages/ProcessingOperations
+
 ### Intro
 
 This package allows you to execute your code every **N** seconds.
