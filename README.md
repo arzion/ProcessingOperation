@@ -1,4 +1,4 @@
-# ProcessingOperation
+# ProcessingOperations
 Infrastructure for scheduling execution of operations.
 
 How to work:
