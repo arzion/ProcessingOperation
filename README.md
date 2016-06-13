@@ -18,7 +18,7 @@ If you stop the manager, the operation Cancellation Token **will be cancelled**.
 
 How to work:
 
-## 1. Without configuration:
+## 1. Without configuration file:
 ```c#
 // 1. create the operation that should be executed by schedule
 public class MyOperation : IOperation {
@@ -42,7 +42,7 @@ manager.Stop();
 // Calling Stop() equivalent to manager.Dispose();
 ```
 
-## 2. With configuration (more preferrably if you are using IoC container):
+## 2. With configuration file (more preferrably if you are using IoC container):
 
 You can specifiy operations configuration in the *configuration file (.config)* of your application
 
