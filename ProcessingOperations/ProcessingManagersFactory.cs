@@ -13,7 +13,6 @@ namespace ProcessingOperations
     public class ProcessingManagersFactory : IProcessingManagersFactory
     {
         private readonly IProcessingOperationsSettingsProvider _settingsProvider;
-        private readonly IOperationFactory _operationFactory;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ProcessingManagersFactory" /> class.
@@ -22,13 +21,6 @@ namespace ProcessingOperations
         public ProcessingManagersFactory()
         {
             _settingsProvider = new ProcessingOperationsSettingsProvider();
-            var operationFactory = ProcessingOperationsConfiguration.OperationFactory;
-            if (operationFactory == null)
-            {
-                throw new InvalidOperationException(
-                    "IOperation factory should be configured.");
-            }
-            _operationFactory = ProcessingOperationsConfiguration.OperationFactory;
         }
 
         /// <summary>
@@ -73,12 +65,26 @@ namespace ProcessingOperations
 
         private IProcessingManager BuildProcessingManager(IRepeatingOperationProcessingManagerSettings settings)
         {
-            var operation = _operationFactory.Create(settings.OperationKey);
+            var operation = CreateOperation(settings);
             if (operation == null)
             {
                 throw new ConfigurationErrorsException($"There were no components found associated with the processing manager. Operation key: {settings.OperationKey}");
             }
             return CreateRepeatingOperationProcessingManager(operation, settings);
+        }
+
+        private IOperation CreateOperation(IRepeatingOperationProcessingManagerSettings settings)
+        {
+            if (ProcessingOperationsConfiguration.OperationFactory != null)
+            {
+                return ProcessingOperationsConfiguration.OperationFactory.Create(settings.OperationKey);
+            }
+            if (ProcessingOperationsConfiguration.OperationFactoryFunc != null)
+            {
+                return ProcessingOperationsConfiguration.OperationFactoryFunc(settings.OperationKey);
+            }
+            throw new InvalidOperationException(
+                    "Operation factory should be configured through the ProcessingOperationsConfiguration");
         }
 
         private IProcessingManager CreateRepeatingOperationProcessingManager(

@@ -29,7 +29,7 @@ manager.Stop();
 
 2. With configuration (more preferrably if you are using IoC container):
 
-You can specifiy managers configuration in the configuration file of your application
+You can specifiy operations configuration in the configuration file of your application
 
 Section defenition:
 ```xml
@@ -52,12 +52,12 @@ public class OperationFactory : IOperationFactory {
         // Create instance of operation based on operation key
     }
 }
-// 2. Configure processing managers to use this factory
-ProcessingManagersConfiguration.SetOperationFactory(new OperationFactory());
+// 2. Configure processing operations to use this factory
+ProcessingOperationsConfiguration.SetOperationFactory(new OperationFactory());
 ```
 Or you can simplify factory creation with just providing the Func delegate how to create the operations
 ```c#
-ProcessingManagersConfiguration.SetOperationFactory(operationKey => {
+ProcessingOperationsConfiguration.SetOperationFactory(operationKey => {
     // Create operation based on operation key
 });
 ```
