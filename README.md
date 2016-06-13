@@ -27,13 +27,13 @@ manager.Stop();
 // Calling stop equivalent to manager.Dispose();
 ```
 
-1. With configuration (more preferrably if you are using IoC container):
+2. With configuration (more preferrably if you are using IoC container):
 
 You can specifiy managers configuration in the configuration file of your application
 
 Section defenition:
 ```xml
-<section name="processingManagers" type="ProcessingOperations.Configuration.ProcessingOperationsSection, ProcessingOperations" />
+<section name="processingOperations" type="ProcessingOperations.Configuration.ProcessingOperationsSection, ProcessingOperations" />
 ```
 Section:
 ```xml
@@ -52,7 +52,7 @@ public class OperationFactory : IOperationFactory {
         // Create instance of operation based on operation key
     }
 }
-// 2. Configure ProcessingManagers to use this factory
+// 2. Configure processing managers to use this factory
 ProcessingManagersConfiguration.SetOperationFactory(new OperationFactory());
 ```
 Or you can simplify factory creation with just providing the Func delegate how to create the operations
