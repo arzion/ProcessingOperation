@@ -4,7 +4,7 @@ Infrastructure for scheduling execution of operations.
 
 This package allows you to execute your code every **N** seconds.
 
-It works like this (Assume that you define execute your operation every **10** seconds):
+It works like this (Assume that you define execution of your operation every **10** seconds):
 
 *You start the manager with assosiated operation and 10 seconds settings:*
 
